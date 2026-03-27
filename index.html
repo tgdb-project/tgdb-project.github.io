@@ -29,8 +29,8 @@
       <section id="main_content" class="inner">
         <h3>Welcome</h3>
 
-<p>tgdb is a lightweight curses (terminal-based) interface to the GNU Debugger
-(GDB).  In addition to the standard gdb console, tgdb provides a split screen
+<p>tgdb is a lightweight terminal-based interface to the GNU Debugger
+(GDB). In addition to the standard gdb console, tgdb provides a split screen
 view that displays the source code as it executes.  The keyboard interface is
 modeled after vim, so vim users should feel at home using tgdb.</p>
 
@@ -53,34 +53,13 @@ modeled after vim, so vim users should feel at home using tgdb.</p>
 </ul>
 
 <h3>Stable Release</h3>
-Download source package: <a href="https://tgdb.me/files/tgdb-0.8.0.tar.gz">tgdb-0.8.0.tar.gz</a>
-(<a href="https://raw.github.com/tgdb/tgdb/v0.8.0/NEWS">changes</a>)
-<div style="font-size: 12px">
-  MD5 checksum:
-  <code style="font-size: 12px">180c1c7100bd9591b0d29e46896b5092</code>
-</div>
-
-<h4>Older Releases</h4>
-Older source packages can be found at: <a
-href="https://tgdb.me/files">https://tgdb.me/files</a>
+Download source package: <a href="https://github.com/etorth/tgdb/archive/refs/tags/0.3.tar.gz">tgdb-0.3.tar.gz</a>
 
 <h3>Latest Sources</h3>
 
-<pre><code>$ git clone git://github.com/tgdb/tgdb.git
+<pre><code>$ git clone git://github.com/etorth/tgdb.git
 $ cd tgdb
-$ ./autogen.sh
-</code></pre>
-
-(a prebuilt <code>configure</code> script is not included in the git
-repository, so it must be generated with the autogen.sh script.)
-
-<h3>Installing</h3>
-
-<p>tgdb depends on libreadline and ncurses development libraries.</p>
-
-<pre><code>$ ./configure --prefix=/usr/local
-$ make
-$ sudo make install
+$ python -m tgdb /path/to/binary/for/debugging
 </code></pre>
 
 <h3>Documentation</h3>
@@ -88,32 +67,12 @@ $ sudo make install
 Online documentation:
 
 <ul>
-  <li><a href="docs/tgdb-split.html">HTML</a> (multiple pages)</li>
   <li><a href="docs/tgdb.html">HTML</a> (single page)</li>
-  <li><a href="docs/tgdb.pdf">PDF</a></li>
 </ul>
 
 <h3>Support or Contact</h3>
 
 <p>Get help on our mailing lists:</p>
-
-<ul>
-  <li>
-    <a href="https://groups.google.com/group/tgdb-users">tgdb:</a>
-    User discussion, Q&amp;A, bug reports, feature requests, etc.
-  </li>
-  <li>
-    <a href="https://groups.google.com/group/tgdb-dev">tgdb-dev:</a>
-    Developer discussion, patches, etc.
-  </li>
-  <li>
-    <em>Archived discussions are also available in the old
-    <a href="http://sourceforge.net/mail/?group_id=72581">Sourceforge
-    project</a>.</em>
-  </li>
-</ul>
-
-<p>Or find us on IRC channel <code>#tgdb</code> on liberachat.</p>
 
       </section>
     </div>
